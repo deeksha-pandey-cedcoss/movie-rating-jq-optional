@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Filter and Selector</title>
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+
+    <h2>My Favourite Movies</h2>
+    <h3>MOVIE-RATING</h3>
+    Title
+    <input type="text" id="title"/> 
+    <BR>
+        <BR>
+        Rating
+    <input type="text" id="rating"/> 
+    <BR>
+        <BR>
+        <input type="submit" value="Add Movies" id="movie">
+        <input type="submit" value="RESET" id="reset">
+       
+   
+        <main id="main">
+        </main>
+        <table id="movie_table">
+            <caption>Details</caption>
+            <thead>
+                <tr>
+                    <th>Title&nbsp;<button onclick="ratingorder()">^</button></th>
+                    <th>Rating<button onclick="ratingor()">^</button></th>
+                    <th>Action<button>X</button></th>
+                  </tr>
+            </thead>
+            <tbody id="movietable">
+
+            </tbody>
+              
+        </table>
+
+        
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>
